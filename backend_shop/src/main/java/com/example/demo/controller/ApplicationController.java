@@ -119,6 +119,7 @@ public class ApplicationController {
         product.setCategory(categoryService.getCategoryById(productDTO.getCategoryId()));
         product.setPrice(productDTO.getPrice());
         product.setAuthor(productDTO.getAuthor());
+        product.setInStockNumber(productDTO.getInStockNumber());
         product.setPublisher(productDTO.getPublisher());
         product.setLanguage(productDTO.getLanguage());
         product.setiSBN(productDTO.getiSBN());
@@ -174,6 +175,7 @@ public class ApplicationController {
         dto.setPrice(newProduct.getPrice());
         dto.setAuthor(newProduct.getAuthor());
         dto.setPublisher(newProduct.getPublisher());
+        dto.setInStockNumber(newProduct.getInStockNumber());
         dto.setLanguage(newProduct.getLanguage());
         dto.setiSBN(newProduct.getiSBN());
         
@@ -198,6 +200,7 @@ public class ApplicationController {
         product.setAuthor(productDTO.getAuthor());
         product.setPublisher(productDTO.getPublisher());
         product.setLanguage(productDTO.getLanguage());
+        product.setInStockNumber(productDTO.getInStockNumber());
         product.setiSBN(productDTO.getiSBN());
         product.setDescription(productDTO.getDescription());
         String imageUUID;

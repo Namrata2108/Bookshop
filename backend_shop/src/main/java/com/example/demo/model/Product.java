@@ -17,6 +17,7 @@ public class Product {
     private double price;
     private long iSBN;
     private String language;
+    private int inStockNumber;
     private String publisher;
     private String author;
     
@@ -47,6 +48,13 @@ public class Product {
 	}
 	public void setPrice(double price) {
 		this.price = price;
+	}
+	public int getInStockNumber() {
+		return inStockNumber;
+	}
+
+	public void setInStockNumber(int inStockNumber) {
+		this.inStockNumber = inStockNumber;
 	}
 	public long getiSBN() {
 		return iSBN;

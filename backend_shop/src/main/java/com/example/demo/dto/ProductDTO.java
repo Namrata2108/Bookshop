@@ -9,6 +9,7 @@ public class ProductDTO {
     private int categoryId;
     private double price;
     private long iSBN;
+    private int inStockNumber;
     private String language;
     private String publisher;
     private String author;
@@ -17,6 +18,13 @@ public class ProductDTO {
 	}
 	public void setiSBN(long ISBN) {
 		this.iSBN = ISBN;
+	}
+	public int getInStockNumber() {
+		return inStockNumber;
+	}
+
+	public void setInStockNumber(int inStockNumber) {
+		this.inStockNumber = inStockNumber;
 	}
 	public String getLanguage() {
 		return language;

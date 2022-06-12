@@ -74,6 +74,10 @@
             <h5>ISBN:
                 <span th:text="${product.iSBN}"></span> 
             </h5>
+            <p><strong>Number in Stock: </strong><span th:text="${product.inStockNumber}"></span></p>
+            <h4 th:if="*{product.inStockNumber&gt;10}" style="color: green">In Stock</h4>
+    		<h4 th:if="*{product.inStockNumber&lt;10 and product.inStockNumber&gt;0}" style="color: green">Only <span th:text="${product.inStockNumber}"> </span> In Stock</h4>
+    		<h4 th:if="*{product.inStockNumber==0}" style="color:darkred;">Unavailable</h4>
             
             
             <p th:text="${product.description}"></p>
